@@ -7,7 +7,7 @@ urlpatterns = [
      
     path('login/', views.loginpage , name = 'login'),
     path('logout/', views.logoutuser , name = 'logout'),
-    path('register/', views.registerpage, name='registeration'),
+    path('register/', views.registerpage, name='register'),
 
 
     
@@ -18,5 +18,5 @@ urlpatterns = [
     path('create-room', views.createroom , name = 'create-room'),
     path('update-room/<int:id>', views.updateroom , name = 'update-room'),
     path('delete-room/<int:id>', views.deleteroom , name = 'delete-room'),
-    
+    path('delete-message/<int:id>', views.deletemessage , name = 'delete-message'),
 ]   

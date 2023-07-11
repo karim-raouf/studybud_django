@@ -13,6 +13,7 @@ urlpatterns = [
     
     path('', views.home , name = 'home'),
     path('room/<int:id>', views.room , name = 'room'),
+    path('profile/<int:id>', views.userprofile , name = 'user-profile'),
     
     
     path('create-room', views.createroom , name = 'create-room'),

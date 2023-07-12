@@ -146,7 +146,7 @@ def updateroom(request ,id):
             return redirect('home')
     
     
-    context = {'form' : form}
+    context = {'form' : form , 'room' : room}
     return render(request , 'base/room_form.html' , context)
 
 

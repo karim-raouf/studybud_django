@@ -20,4 +20,9 @@ urlpatterns = [
     path('update-room/<int:id>', views.updateroom , name = 'update-room'),
     path('delete-room/<int:id>', views.deleteroom , name = 'delete-room'),
     path('delete-message/<int:id>', views.deletemessage , name = 'delete-message'),
+    
+    path('update-user/', views.updateuser , name = 'update-user'),
+    
+    path('topics/', views.topicspage , name = 'topics'),
+    path('activities/', views.activitypage , name = 'activities'),
 ]   
